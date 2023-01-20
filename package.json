@@ -1,0 +1,19 @@
+{
+  "name": "itpu-web",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SarvarKh/itpu-web.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SarvarKh/itpu-web/issues"
+  },
+  "homepage": "https://github.com/SarvarKh/itpu-web#readme"
+}

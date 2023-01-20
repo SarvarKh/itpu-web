@@ -1,0 +1,125 @@
+.home {
+    background-image: url("../assets/img/background_home.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 84.8vh;
+    max-height: 822px;
+
+    color: #fff;
+    text-align: center;
+
+    .navbar {
+        max-width: 1280px;
+        height: 80px;
+        color: #fff;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        .logo {
+            font-style: normal;
+            font-family: 'Source Sans Pro', sans-serif;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 16px;
+            padding: 0 100px;
+
+
+            @media (max-width: 700px) {
+                padding: 0;
+            }
+        }
+
+        .navbar_list {
+            float: right;
+            margin-right: 20px;
+
+            @media (max-width: 700px) {
+                position: fixed;
+                width: 100%;
+                height: 100vh;
+                background: #444;
+                top: 80px;
+                left: -100%;
+                text-align: center;
+                transition: all .5s;
+            }
+
+            .navbar_list_item {
+                display: inline-block;
+                margin: 0 5px;
+
+                @media (max-width: 700px) {
+                    display: inline-block;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                    margin-top: 24px;
+                }
+
+                .an_link {
+                    color: #fff;
+                    font-family: 'Source Sans Pro', sans-serif;
+
+                    @media (max-width: 700px) {
+                        background: none;
+                    }
+                }
+
+                .active,
+                &:hover {
+                    cursor: pointer;
+                    line-height: 1rem;
+                    border-bottom: 2px solid #fff;
+                    transition: .1s;
+                }
+            }
+        }
+
+        .checkbtn {
+            cursor: pointer;
+            display: none;
+
+            @media (max-width: 700px) {
+                display: block;
+            }
+        }
+
+        #check {
+            display: none;
+
+            &:checked~ul {
+                left: 0;
+            }
+        }
+    }
+
+    .home_logo_img {
+        margin-top: 200px;
+    }
+
+    .home_header {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 64px;
+
+        max-width: 386px;
+        margin: auto;
+        margin-top: 14px;
+    }
+
+    .home_par {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 32px;
+
+        max-width: 426px;
+        margin: auto;
+        margin-top: 40px;
+    }
+}
